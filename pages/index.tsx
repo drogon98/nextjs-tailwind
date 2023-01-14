@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,109 +15,50 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <div className="relative w-96 m-3 cursor-pointer border-2 shadow-lg rounded-xl items-center">
+          {/* Image */}
+          <div className="flex h-28 bg-blue-700 rounded-xl items-center justify-center">
+            <h1 className="absolute mx-auto text-center right text-2xl text-white">
+              Image goes here
+            </h1>
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          {/* Description */}
+          <div className="p-2 border-b-2">
+            <h6>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              beatae nulla, atque et sunt ad voluptatum quidem impedit numquam
+              quia? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facilis beatae nulla, atque et sunt ad voluptatum quidem impedit
+              numquam quia?
+            </h6>
           </div>
-        </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+          {/* Tech stack used */}
+          <div className="flex flex-wrap items-center m-2">
+            <span className=" border border-blue-300 rounded-2xl px-2 my-1 mx-1">
+              #React
+            </span>
+            <span className=" border border-blue-300 rounded-2xl px-2 my-1 mx-1">
+              #Redux
+            </span>
+            <span className=" border border-blue-300 rounded-2xl px-2 my-1 mx-1">
+              #Javascript
+            </span>
+          </div>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          {/* Links */}
+          <div className="flex flex-wrap items-center rounded-b-xl border-t-2 bg-white">
+            <button className="border rounded-2xl bg-blue-600 text-white shadow-sm p-1 px-2 m-2">
+              Go to Project
+            </button>
+            <button className="border-2 border-blue-600 rounded-2xl text-blue-600 shadow-sm p-1 px-2 m-2">
+              Github
+            </button>
+          </div>
         </div>
       </main>
     </>
-  )
+  );
 }
