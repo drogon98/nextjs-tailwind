@@ -1,7 +1,13 @@
 import Account from "@/components/Account";
+import Companies from "@/components/Companies";
+import FAQ from "@/components/FAQ";
+import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
 import HeroBottom from "@/components/HeroBottom";
+import MobileApp from "@/components/MobileApp";
+import News from "@/components/News";
 import Popular from "@/components/Popular";
+import Reviews from "@/components/Reviews";
 import RoadMap from "@/components/RoadMap";
 import Statistics from "@/components/Statistics";
 import Team from "@/components/Team";
@@ -30,6 +36,12 @@ export default function Home() {
         <Video />
         <Account />
         <Team />
+        <FAQ />
+        <MobileApp />
+        <News />
+        <Reviews />
+        <Companies />
+        <GetInTouch />
       </main>
     </>
   );
