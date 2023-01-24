@@ -1,6 +1,8 @@
 import Account from "@/components/Account";
 import Companies from "@/components/Companies";
+import CopyRight from "@/components/CopyRight";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
 import HeroBottom from "@/components/HeroBottom";
@@ -15,6 +17,8 @@ import TokenRate from "@/components/TokenRate";
 import Video from "@/components/Video";
 import WhyInvest from "@/components/WhyInvest";
 import Head from "next/head";
+
+// https://demo.templatemonster.com/demo/183228.html?_gl=1*bg8xsh*_ga*MTQ4NDUxMjYzMS4xNjc0MDAzNzI2*_ga_FTPYEGT5LY*MTY3NDAwMzcyNi4xLjAuMTY3NDAwMzc0MS40NS4wLjA.&_ga=2.162121151.286302532.1674003727-1484512631.1674003726
 
 export default function Home() {
   return (
@@ -42,6 +46,8 @@ export default function Home() {
         <Reviews />
         <Companies />
         <GetInTouch />
+        <Footer />
+        <CopyRight />
       </main>
     </>
   );
