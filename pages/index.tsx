@@ -7,6 +7,7 @@ import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
 import HeroBottom from "@/components/HeroBottom";
 import MobileApp from "@/components/MobileApp";
+import Navbar from "@/components/Navbar";
 import News from "@/components/News";
 import Popular from "@/components/Popular";
 import Reviews from "@/components/Reviews";
@@ -30,6 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Navbar />
         <Hero />
         <HeroBottom />
         <TokenRate />
