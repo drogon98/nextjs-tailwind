@@ -5,11 +5,11 @@ interface ITokenRateProps {}
 export default function TokenRate(props: ITokenRateProps) {
   return (
     <div className="bg-[#040444] py-14">
-      <div className="container mx-auto columns-2">
-        <div className="w-full">
+      <div className="container mx-auto md:flex">
+        <div className="w-full md:w-1/2">
           <h3 className="text-4xl font-bold text-white">TOKEN RATE</h3>
         </div>
-        <div className="w-full break-before-column">
+        <div className="w-full md:w-1/2">
           <h3 className="text-4xl font-bold text-white">WELCOME TO MUGHNI</h3>
           <p className="my-8 text-white">
             Lorem Ipsum generators on the Internet tend to repeat predefined

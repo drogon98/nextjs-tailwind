@@ -5,9 +5,9 @@ interface IMobileAppProps {}
 export default function MobileApp(props: IMobileAppProps) {
   return (
     <div className="py-14">
-      <div className="container mx-auto columns-2">
-        <div className="w-full"></div>
-        <div className="w-full break-before-column">
+      <div className="container mx-auto md:flex">
+        <div className="w-full md:w-1/2"></div>
+        <div className="w-full md:w-1/2">
           <h4 className="text-4xl font-bold">ICO MOBILE APP</h4>
           <p className="py-6">
             The standard chunk of Lorem Ipsum used since the 1500s is reproduced
