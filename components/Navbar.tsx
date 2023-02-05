@@ -1,11 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-interface INavbarProps {}
+interface INavbarProps {
+  bgNavbar: boolean;
+}
 
 export default function Navbar(props: INavbarProps) {
   return (
-    <div className="fixed top-0 w-full bg-transparent h-24">
+    <div
+      className={`fixed top-0 w-full ${
+        props.bgNavbar ? "bg-[#040444]" : "bg-transparent"
+      } h-24`}
+    >
       <div className="container mx-auto grid grid-cols-3 h-24">
         <div className="col-span-1 flex h-100 items-center">
           <a href="http://">

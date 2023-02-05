@@ -18,10 +18,25 @@ import TokenRate from "@/components/TokenRate";
 import Video from "@/components/Video";
 import WhyInvest from "@/components/WhyInvest";
 import Head from "next/head";
+import { useEffect, useRef, useState } from "react";
 
 // https://demo.templatemonster.com/demo/183228.html?_gl=1*bg8xsh*_ga*MTQ4NDUxMjYzMS4xNjc0MDAzNzI2*_ga_FTPYEGT5LY*MTY3NDAwMzcyNi4xLjAuMTY3NDAwMzc0MS40NS4wLjA.&_ga=2.162121151.286302532.1674003727-1484512631.1674003726
 
 export default function Home() {
+  const [bgNavbar, setBgNavbar] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      // Get scroll position
+      console.log(window.scrollY);
+      if (window.scrollY > 100) {
+        setBgNavbar(true);
+      } else {
+        setBgNavbar(false);
+      }
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -31,7 +46,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
+        <Navbar bgNavbar={bgNavbar} />
         <Hero />
         <HeroBottom />
         <TokenRate />

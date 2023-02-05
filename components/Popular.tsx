@@ -10,7 +10,7 @@ export default function Popular(props: IPopularProps) {
           POPULAR CRYP TO CURRENCY
         </h4>
 
-        <div className="grid grid-cols-4 gap-5 my-14 text-black">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 my-14 text-black">
           <div className="bg-white rounded-[4px] py-4 px-6">
             <h3 className="text-xl font-bold">BTC</h3>
             <p className="py-2">$1,365,600 (+5.6%)</p>
