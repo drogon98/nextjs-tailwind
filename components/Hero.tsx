@@ -7,7 +7,7 @@ export default function Hero(props: IHeroProps) {
   return (
     <div className="md:h-screen bg-[#051A32]">
       <div className="container md:flex md:h-full mx-auto">
-        <div className="w-full md:w-1/2 md:h-full flex flex-col justify-center text-white pt-36">
+        <div className="w-full md:w-1/2 md:h-full flex flex-col justify-center text-white py-36 md:pb-0 bg-[url('/bitcoin.jpg')] md:bg-none">
           <h1 className="text-5xl font-bold tracking-wider">
             Cryp To Currency Blockchain Token
           </h1>
@@ -21,7 +21,7 @@ export default function Hero(props: IHeroProps) {
             <button className="border py-1 px-4">Sign Up</button>
           </div>
         </div>
-        <div className="w-full md:w-1/2 md:h-full pt-36">
+        <div className="hidden md:block w-full md:w-1/2 md:h-full pt-36">
           <Image
             src={"/bitcoin.jpg"}
             height={200}
