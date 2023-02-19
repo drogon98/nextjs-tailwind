@@ -24,8 +24,8 @@ export default function Hero(props: IHeroProps) {
         <div className="hidden md:block w-full md:w-1/2 md:h-full pt-36">
           <Image
             src={"/bitcoin.jpg"}
-            height={200}
-            width={200}
+            height={500}
+            width={500}
             alt={"bitcoin"}
           />
         </div>
